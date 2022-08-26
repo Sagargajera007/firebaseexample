@@ -56,7 +56,9 @@ class _otpsendState extends State<otpsend> {
               style: TextStyle(fontSize: 17),
               onChanged: (pin) {
                 print("Changed: " + pin);
-              }, ),
+              }, onCompleted: (pin) {
+                print("Completed: " + pin);
+              }),
           ElevatedButton(onPressed: () async {
 
             String smsCode = tcode.toString();
@@ -74,5 +76,6 @@ class _otpsendState extends State<otpsend> {
         ],
       ),
     );
+
   }
 }
