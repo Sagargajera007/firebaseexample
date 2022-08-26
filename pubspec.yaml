@@ -38,6 +38,7 @@ dependencies:
   firebase_auth:
   otp_text_field:
   pin_code_view:
+  google_sign_in:
 
 dev_dependencies:
   flutter_test:
